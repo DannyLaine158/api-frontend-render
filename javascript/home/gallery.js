@@ -42,7 +42,7 @@ export async function loadGallery(users, onlyMine = false) {
         card.innerHTML = /*html*/`
             <div class='card hoverable z-depth-3'>
                 <div class='card-image'>
-                    <img class='materialboxed' src='${URI}/static/uploads/${img.filename}' />
+                    <img class='materialboxed' src='data:image/jpeg;base64,${img.filedata}' />
                 </div>
                 <div class='card-content'>
                     <div class='like-section'>
